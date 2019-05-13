@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<title>ALARM CLOCK</title>
+</head>
+<body onload="time()">
+	<div class="parent">
+		<div id="clock"></div>
+		<div class="alarminput">
+			<input type="text" name="alarm" placeholder="HH:MM:SS" id="set-alarm" class="inputalarm" size="15">
+			<input type="radio" id="am" class="radio" name="am-pm">
+			<label for="am">AM</label>
+			<input type="radio" id="pm" class="radio" name="am-pm">
+			<label for="pm">PM</label>
+		</div>
+		<div class="buttons">
+			<button type="submit" id="submit-alarm" class="alarm" onclick="setAlarm(); ring()">Set Alarm</button>
+			<button type="submit" id="clear-alarm" class="clear" onclick="clearAlarm()">Clear Input</button>
+			<button type="submit" id="reset-alarm" class="reset" onclick="resetAlarm()" disabled>Reset</button>
+		</div>
+	</div>
+	 <audio id="sound" loop>
+      <source src="media/hedwig.m4a" type="audio/mp4">
+    </audio>
+	<script src="js/main.js"></script>
+</body>
+</html>

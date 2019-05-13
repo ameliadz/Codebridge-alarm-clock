@@ -1,0 +1,71 @@
+html {
+	height: 100%;
+}
+body {
+	display: grid;
+	justify-content: center;
+	background: linear-gradient(#d0dbff, #faffb7);
+	color: white;
+	font-family: 'PT', monospace;
+}
+.parent {
+	margin-top: 40px;
+	width: 500px;
+	padding: 30px 40px 10px 40px;
+	display: grid;
+	border: ridge rgb(17, 59, 71);
+	border-radius: 15px;
+	background-color: rgb(25, 85, 102);
+}
+#clock {
+	font-size: 50pt;
+	text-align: center;
+	background-color: rgb(52, 68, 54);
+	border: 5px inset rgb(122, 138, 142);
+	box-shadow: inset 0 0 10px black;
+	color: black;
+	text-shadow: 1px 1px 2px black;
+}
+.alarm {
+	text-align: center;
+}
+.alarminput {
+	margin: 5px auto 0 auto;
+}
+.buttons {
+	margin-top: 5px;
+	text-align: center;
+}
+#set-alarm {
+	background-color: rgb(110, 124, 128);
+	text-align: center;
+	box-shadow: inset 0 0 5px black;
+	border: none;
+	color: white;
+	height: 20px;
+}
+::placeholder {
+	color: #c3c3c3;
+}
+label {
+	color: black;
+	padding-right: 5px;
+	font-weight: bold;
+}
+button {
+	color: #c3c3c3;
+	background-color: rgb(22, 53, 61);
+	border-radius: 5px;
+	border: outset rgb(19, 50, 58);
+}
+
+button:disabled {
+	background-color: rgb(25, 25, 25);
+}
+
+/*
+style the main box
+style the text
+style the buttons
+style the disabled buttons
+*/
